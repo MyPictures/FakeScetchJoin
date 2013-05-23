@@ -12,11 +12,11 @@ public final class FakeScetchJoin extends JavaPlugin implements Listener {
     public void onEnable(){
 		getServer().getPluginManager().registerEvents(this, this);
     	getLogger().info("FakeScetchJoin enabled!");
-	}
-    
-    @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent evt) { 
-    	getServer().broadcastMessage(ChatColor.YELLOW + "Scetch joined the game");
+}
+
+@EventHandler
+public void onPlayerJoin(PlayerJoinEvent evt) { 
+	getServer().broadcastMessage(ChatColor.YELLOW + "Scetch joined the game");
     }
  
     @Override
