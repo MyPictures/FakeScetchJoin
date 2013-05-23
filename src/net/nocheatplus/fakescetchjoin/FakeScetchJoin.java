@@ -9,18 +9,18 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class FakeScetchJoin extends JavaPlugin implements Listener {
 
 	@Override
-    public void onEnable(){
+	public void onEnable(){
 		getServer().getPluginManager().registerEvents(this, this);
-    	getLogger().info("FakeScetchJoin enabled!");
-}
+		getLogger().info("FakeScetchJoin enabled!");
+	}
 
-@EventHandler
-public void onPlayerJoin(PlayerJoinEvent evt) { 
-	getServer().broadcastMessage(ChatColor.YELLOW + "Scetch joined the game");
-    }
+	@EventHandler
+	public void onPlayerJoin(PlayerJoinEvent evt) { 
+		getServer().broadcastMessage(ChatColor.YELLOW + "Scetch joined the game");
+	}
  
-    @Override
-    public void onDisable() {
-    	getLogger().info("FakeScetchJoin disabled!");
-    }
+	@Override
+	public void onDisable() {
+		getLogger().info("FakeScetchJoin disabled!");
+	}
 }
