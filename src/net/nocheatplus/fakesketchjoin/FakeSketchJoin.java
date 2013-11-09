@@ -16,7 +16,8 @@ public final class FakeSketchJoin extends JavaPlugin implements Listener {
 
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent evt) { 
-		getServer().broadcastMessage(ChatColor.YELLOW + "Sketch joined the game");
+	//	getServer().broadcastMessage(ChatColor.YELLOW + "Sketch joined the game");
+		evt.setJoinMessage(ChatColor.YELLOW + "Sketch joined the game");
 	}
  
 	@Override
